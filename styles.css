@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+/* color guide
+### Primary
+
+- Linear gradient (active input border): hsl(249, 99%, 64%) to hsl(278, 94%, 30%)
+- Red (input errors): hsl(0, 100%, 66%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Light grayish violet: hsl(270, 3%, 87%)
+- Dark grayish violet: hsl(279, 6%, 55%)
+- Very dark violet: hsl(278, 68%, 11%)
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 1400px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.page_wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+/* Left */
+.purple_section{
+    background-image: url(./interactive-card-details-form-main/images/bg-main-desktop.png);
+    overflow: visible;
+    width: 400px;
+}
+/* Cards */
+.front{
+    background-image: url(./interactive-card-details-form-main/images/bg-card-front.png);
+    text-transform: uppercase;
+    color:  hsl(0, 0%, 100%);
+
+
+}
+.back{
+    background-image: url(./interactive-card-details-form-main/images/bg-card-back.png);
+}
+.cards{
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 250px;
+    position: absolute;
+}
+
+/* right */
+.white_section{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    color: hsl(278, 68%, 11%);
+    text-transform: uppercase;
+    font-size: 9px;
+    font-weight: 500;
+    text-align: left;
+}
+.last_row{
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    height: 30px;
+    width: 300px;
+}
+.last{
+    width: 100px;
+}
+button{
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
