@@ -31,25 +31,66 @@
     background-image: url(./interactive-card-details-form-main/images/bg-main-desktop.png);
     overflow: visible;
     width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards_section{
+    position: relative;
 }
 /* Cards */
 .front{
     background-image: url(./interactive-card-details-form-main/images/bg-card-front.png);
+    background-image: ;
     text-transform: uppercase;
     color:  hsl(0, 0%, 100%);
+    top: -300px;
+    left: -80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    font-weight: 200;
+    letter-spacing: 7px;
 
 
 }
+.logo{
+    max-width: 100px;
+}
+.insert_number{
+    font-size: 28px;
+    text-align: center;
+}
+.last_insert{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
 .back{
     background-image: url(./interactive-card-details-form-main/images/bg-card-back.png);
+    position: relative;
 }
 .cards{
     background-repeat: no-repeat;
     width: 450px;
     height: 250px;
-    position: absolute;
-}
+    border-radius: 15px;
 
+    position: absolute;
+    filter: drop-shadow(4px 0px 4px grey);
+
+}
+.insert_cvc{
+    position: absolute;
+    right: 12%;
+    top: 45%;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
 /* right */
 .white_section{
     display: flex;
@@ -58,20 +99,43 @@
     justify-content: center;
     align-items: center;
 }
+.insert_info{
+    margin-left: 300px;
+    width: 400px;
+}
+.name_input,
+.number_input{
+    width: 100%;
+}
 label{
     color: hsl(278, 68%, 11%);
     text-transform: uppercase;
     font-size: 9px;
     font-weight: 500;
     text-align: left;
+ 
 }
 .last_row{
     display: flex;
     justify-content: space-between;
+    width: 50%;
+}
+.last_inputs{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.mm_input,
+.yy_input{
+    width: 25%;
+    margin: 0 10px 0 0;
 }
 input{
-    height: 30px;
+    height: 40px;
     width: 300px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: hsl(270, 3%, 87%);
 }
 .last{
     width: 100px;

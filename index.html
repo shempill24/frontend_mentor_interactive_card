@@ -10,28 +10,35 @@
 <body>
     <div class="page_wrapper">
         <div class="purple_section">
-            <div class="cards front"><img src="./interactive-card-details-form-main/images/card-logo.svg" alt="">
-            <div class="insert_number">9591648963891010</div>
-            <div class="insert_name">Felicia Leire</div>
-            <div class="insert_expiration">09/00</div>
+            <div class="cards_section">
+            <div class="cards front"><img class="logo"src="./interactive-card-details-form-main/images/card-logo.svg" alt="">
+            <div class="insert">
+            <div class="insert_number">9591 6489 6389 1010</div>
+            <div class="last_insert"><div class="insert_name">Felicia Leire</div>
+            <div class="insert_expiration">09/00</div></div></div>
         </div>
             <div class="cards back">
                 <div class="insert_cvc">000</div>
             </div>
         </div>
-        <div class="white_section">
-            <div><label for="name" class="name">Cardholder Name</label><br>
-                <input type="text" placeholder="e.g. Jane Appleseed"><br>
-            <label for="number">Card Number</label><br>
-            <input type="number" class="number" placeholder="e.g. 1234 5678 9123 0000"><br>
-            <div class="last_row">
-            <label for="" class="exp">Exp. Date (MM/YY)</label><label for="">CVC</label>
         </div>
-            <input class="last" type="number" placeholder="MM"><input class="last"type="number" placeholder="YY">
-            <input class="last"type="text" name="" id=""placeholder="e.g.123">
-            <br><button>Confirm</button></div>
-
-
+        <div class="white_section">
+            <div class="insert_info">
+                <label for="name" class="name">Cardholder Name</label><br>
+                <input class="name_input"type="text" placeholder="e.g. Jane Appleseed"><br>
+                <label for="number">Card Number</label><br>
+                <input type="number" class="number_input" placeholder="e.g. 1234 5678 9123 0000"><br>
+                <div class="last_row">
+                    <label for="" class="exp">Exp. Date (MM/YY)</label>
+                    <label for="">CVC</label>
+                </div>
+                <div class="last_inputs">
+                    <input class="mm_input" type="number" min="01" max="12"placeholder="MM">
+                    <input class="yy_input"type="number"  min="23" max="45"placeholder="YY">
+                    <input class="cvc_input"type="text" name="" id=""placeholder="e.g.123">
+                </div>
+                <br><button>Confirm</button>
+            </div>
         </div>
     </div>
 </body>
