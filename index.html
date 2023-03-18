@@ -27,19 +27,20 @@
                 <label for="name" class="name">Cardholder Name</label><br>
                 <input class="name_input"type="text" placeholder="e.g. Jane Appleseed"><br>
                 <label for="number">Card Number</label><br>
-                <input type="number" class="number_input" placeholder="e.g. 1234 5678 9123 0000"><br>
+                <input type="text" class="number_input" placeholder="e.g. 1234 5678 9123 0000" pattern="/^\d*$/"><br>
                 <div class="last_row">
                     <label for="" class="exp">Exp. Date (MM/YY)</label>
                     <label for="">CVC</label>
                 </div>
                 <div class="last_inputs">
-                    <input class="mm_input" type="number" min="01" max="12"placeholder="MM">
-                    <input class="yy_input"type="number"  min="23" max="45"placeholder="YY">
-                    <input class="cvc_input"type="text" name="" id=""placeholder="e.g.123">
+                    <input class="mm_input" type="text" minlength="01" maxlength="2"placeholder="MM" pattern="/^\d{2}&/" required>
+                    <input class="yy_input"type="text"  min="23" max="45"placeholder="YY"pattern="/\d/">
+                    <input class="cvc_input"type="text" name="" id="" minlength="3" maxlength="4" placeholder="e.g.123" pattern="/\d/">
                 </div>
                 <br><button>Confirm</button>
             </div>
         </div>
     </div>
+    <script src="./main.js"></script>
 </body>
 </html>
