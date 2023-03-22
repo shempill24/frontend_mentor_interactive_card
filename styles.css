@@ -29,14 +29,19 @@
 /* Left */
 .purple_section{
     background-image: url(./interactive-card-details-form-main/images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: visible;
     width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .cards_section{
     position: relative;
+ 
+   
 }
 /* Cards */
 .front{
@@ -68,6 +73,9 @@
     font-size: 12px;
     letter-spacing: 4px;
 }
+.expiration{
+    display: flex;
+}
 .back{
     background-image: url(./interactive-card-details-form-main/images/bg-card-back.png);
     position: relative;
@@ -97,6 +105,7 @@
     flex: 2;
     justify-content: center;
     align-items: center;
+ 
 }
 .insert_info{
     margin-left: 300px;
@@ -145,8 +154,50 @@ input{
 button{
     background-color: hsl(278, 68%, 11%);
     color: white;
-    height: 30px;
+    height: 40px;
     width: 300px;
     border-radius: 5px;
     margin-top: 30px;
+    width: 100%;
+    cursor: pointer;
+}
+@media only screen and (max-width:900px) {
+   .page_wrapper{
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: center;
+       border: 2px solid black;
+   }
+    .purple_section{
+        height: 30vh;
+        width: 100vw;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .cards_section{
+        width: 100%;
+        height: 100%;
+        
+    }
+    .front{
+        top: 110px;
+        left: 10px;
+        z-index: 3;
+
+    }
+    .back{
+        left: 80px;
+    }
+    .cards{
+      transform: scale(.60);
+    }
+
+   .insert_info{
+       margin-left: 20px;
+       padding: 20px;
+       width: 80vw;
+   }
+   button{
+       
+   }
 }

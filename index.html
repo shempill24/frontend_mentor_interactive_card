@@ -11,33 +11,40 @@
     <div class="page_wrapper">
         <div class="purple_section">
             <div class="cards_section">
-            <div class="cards front"><img class="logo"src="./interactive-card-details-form-main/images/card-logo.svg" alt="">
-            <div class="insert">
-            <div class="insert_number">9591 6489 6389 1010</div>
-            <div class="last_insert"><div class="insert_name">Felicia Leire</div>
-            <div class="insert_expiration">09/00</div></div></div>
-        </div>
-            <div class="cards back">
-                <div class="insert_cvc">000</div>
+                <div class="cards front"><img class="logo"src="./interactive-card-details-form-main/images/card-logo.svg" alt="">
+                    <div class="insert">
+                        <div class="insert_number">9591 6489 6389 1010</div>
+                        <div class="last_insert">
+                            <div class="insert_name">Felicia Leire</div>
+                            <div class="expiration">
+                                <div class="insert_expiration_mm">09</div> 
+                                <div>/</div> 
+                                <div class="insert_expiration_yy"> 00</div> 
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="cards back">
+                    <div class="insert_cvc">000</div>
+                </div>
             </div>
-        </div>
         </div>
         <div class="white_section">
             <div class="insert_info">
                 <label for="name" class="name">Cardholder Name</label><br>
-                <input class="name_input"type="text" placeholder="e.g. Jane Appleseed"><br>
+                <input class="name_input"type="text" placeholder="e.g. Jane Appleseed" required><br>
                 <label for="number">Card Number</label><br>
-                <input type="text" class="number_input" placeholder="e.g. 1234 5678 9123 0000" pattern="/^\d*$/"><br>
+                <input type="text" class="number_input" placeholder="e.g. 1234 5678 9123 0000" minlength="16" maxlength="16"pattern="/^\d*$/" required><br>
                 <div class="last_row">
                     <label for="" class="exp">Exp. Date (MM/YY)</label>
                     <label for="">CVC</label>
                 </div>
                 <div class="last_inputs">
-                    <input class="mm_input" type="text" minlength="01" maxlength="2"placeholder="MM" pattern="/^\d{2}&/" required>
-                    <input class="yy_input"type="text"  min="23" max="45"placeholder="YY"pattern="/\d/">
-                    <input class="cvc_input"type="text" name="" id="" minlength="3" maxlength="4" placeholder="e.g.123" pattern="/\d/">
+                    <input class="mm_input" required type="text" minlength="01" maxlength="2"placeholder="MM" pattern="/^\d{2}&/" required>
+                    <input class="yy_input"type="text" required min="23" max="45"  minlength="01" maxlength="2"placeholder="YY"pattern="/\d/">
+                    <input class="cvc_input"type="text" required minlength="3" maxlength="4" placeholder="e.g.123" pattern="/\d/">
                 </div>
-                <br><button>Confirm</button>
+                <br><button type="submit">Confirm</button>
             </div>
         </div>
     </div>
