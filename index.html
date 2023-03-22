@@ -32,17 +32,17 @@
         </section>
         <section class="white_section">
             <div class="insert_info">
-                <label for="name" class="name">Cardholder Name</label><br>
+                <label class="name">Cardholder Name</label><br>
                 <input class="name_input"type="text" placeholder="e.g. Jane Appleseed" required><br>
-                <label for="number">Card Number</label><br>
+                <label>Card Number</label><br>
                 <input type="text" class="number_input" placeholder="e.g. 1234 5678 9123 0000" minlength="16" maxlength="16"pattern="/^\d*$/" required><br>
                 <div class="last_row">
-                    <label for="" class="exp">Exp. Date (MM/YY)</label>
-                    <label for="">CVC</label>
+                    <label  class="exp">Exp. Date (MM/YY)</label>
+                    <label>CVC</label>
                 </div>
                 <div class="last_inputs">
                     <input class="mm_input" required type="text" minlength="01" maxlength="2"placeholder="MM" pattern="/^\d{2}&/" required>
-                    <input class="yy_input"type="text" required min="23" max="45"  minlength="01" maxlength="2"placeholder="YY"pattern="/\d/">
+                    <input class="yy_input"type="text" required  minlength="01" maxlength="2"placeholder="YY"pattern="/\d/">
                     <input class="cvc_input"type="text" required minlength="3" maxlength="4" placeholder="e.g.123" pattern="/\d/">
                 </div>
                 <br><button type="submit">Confirm</button>
